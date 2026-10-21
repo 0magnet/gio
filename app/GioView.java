@@ -80,6 +80,11 @@ public final class GioView extends SurfaceView implements Choreographer.FrameCal
 			setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
 		}
 		setLayoutParams(new WindowManager.LayoutParams(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT));
+		// Draw edge to edge on every version, as targeting SDK 35 or newer forces,
+		// and take the bars, cutout and keyboard as insets (onApplyWindowInsets).
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R && context instanceof Activity) {
+			((Activity) context).getWindow().setDecorFitsSystemWindows(false);
+		}
 
 		// Late initialization of the Go runtime to wait for a valid context.
 		Gio.init(context.getApplicationContext());
@@ -111,6 +116,7 @@ public final class GioView extends SurfaceView implements Choreographer.FrameCal
 		accessManager = (AccessibilityManager)context.getSystemService(Context.ACCESSIBILITY_SERVICE);
 		imm = (InputMethodManager)context.getSystemService(Context.INPUT_METHOD_SERVICE);
 		nhandle = onCreateView(this);
+		requestApplyInsets();
 		setFocusable(true);
 		setFocusableInTouchMode(true);
 		surfCallbacks = new SurfaceHolder.Callback() {
@@ -435,6 +441,19 @@ public final class GioView extends SurfaceView implements Choreographer.FrameCal
 
 	void hideTextInput() {
 		imm.hideSoftInputFromWindow(getWindowToken(), 0);
+	}
+
+	@Override public WindowInsets onApplyWindowInsets(WindowInsets insets) {
+		if (Build.VERSION.SDK_INT < Build.VERSION_CODES.R) {
+			return super.onApplyWindowInsets(insets);
+		}
+		// Edge to edge, fitSystemWindows leaves out the keyboard: adjustResize
+		// no longer applies. https://developer.android.com/develop/ui/views/layout/edge-to-edge
+		android.graphics.Insets in = insets.getInsets(WindowInsets.Type.systemBars() | WindowInsets.Type.displayCutout() | WindowInsets.Type.ime());
+		if (nhandle != 0) {
+			onWindowInsets(nhandle, in.top, in.right, in.bottom, in.left);
+		}
+		return WindowInsets.CONSUMED;
 	}
 
 	@Override protected boolean fitSystemWindows(Rect insets) {

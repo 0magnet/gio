@@ -7,10 +7,10 @@ import (
 
 	"golang.org/x/exp/shiny/materialdesign/icons"
 
-	"gioui.org/font"
-	"gioui.org/text"
-	"gioui.org/unit"
-	"gioui.org/widget"
+	"github.com/0magnet/gio/font"
+	"github.com/0magnet/gio/text"
+	"github.com/0magnet/gio/unit"
+	"github.com/0magnet/gio/widget"
 )
 
 // Palette contains the minimal set of colors that a widget may need to

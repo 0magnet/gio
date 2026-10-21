@@ -5,7 +5,7 @@
 package headless
 
 import (
-	"gioui.org/internal/egl"
+	"github.com/0magnet/gio/internal/egl"
 )
 
 func init() {

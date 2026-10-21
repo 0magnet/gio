@@ -38,19 +38,19 @@ import (
 	"unicode/utf8"
 	"unsafe"
 
-	"gioui.org/f32"
-	"gioui.org/io/event"
-	"gioui.org/io/key"
-	"gioui.org/io/pointer"
-	"gioui.org/io/system"
-	"gioui.org/io/transfer"
-	"gioui.org/op"
-	"gioui.org/unit"
+	"github.com/0magnet/gio/f32"
+	"github.com/0magnet/gio/io/event"
+	"github.com/0magnet/gio/io/key"
+	"github.com/0magnet/gio/io/pointer"
+	"github.com/0magnet/gio/io/system"
+	"github.com/0magnet/gio/io/transfer"
+	"github.com/0magnet/gio/op"
+	"github.com/0magnet/gio/unit"
 
 	syscall "golang.org/x/sys/unix"
 
-	"gioui.org/app/internal/ibus"
-	"gioui.org/app/internal/xkb"
+	"github.com/0magnet/gio/app/internal/ibus"
+	"github.com/0magnet/gio/app/internal/xkb"
 )
 
 const (

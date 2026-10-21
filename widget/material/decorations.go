@@ -4,14 +4,14 @@ import (
 	"image"
 	"image/color"
 
-	"gioui.org/f32"
-	"gioui.org/io/system"
-	"gioui.org/layout"
-	"gioui.org/op"
-	"gioui.org/op/clip"
-	"gioui.org/op/paint"
-	"gioui.org/unit"
-	"gioui.org/widget"
+	"github.com/0magnet/gio/f32"
+	"github.com/0magnet/gio/io/system"
+	"github.com/0magnet/gio/layout"
+	"github.com/0magnet/gio/op"
+	"github.com/0magnet/gio/op/clip"
+	"github.com/0magnet/gio/op/paint"
+	"github.com/0magnet/gio/unit"
+	"github.com/0magnet/gio/widget"
 )
 
 // DecorationsStyle provides the style elements for Decorations.

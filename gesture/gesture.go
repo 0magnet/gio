@@ -15,14 +15,14 @@ import (
 	"runtime"
 	"time"
 
-	"gioui.org/f32"
-	"gioui.org/internal/fling"
-	"gioui.org/io/event"
-	"gioui.org/io/input"
-	"gioui.org/io/key"
-	"gioui.org/io/pointer"
-	"gioui.org/op"
-	"gioui.org/unit"
+	"github.com/0magnet/gio/f32"
+	"github.com/0magnet/gio/internal/fling"
+	"github.com/0magnet/gio/io/event"
+	"github.com/0magnet/gio/io/input"
+	"github.com/0magnet/gio/io/key"
+	"github.com/0magnet/gio/io/pointer"
+	"github.com/0magnet/gio/op"
+	"github.com/0magnet/gio/unit"
 )
 
 // The duration is somewhat arbitrary.

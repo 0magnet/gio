@@ -6,7 +6,7 @@ import (
 	"image"
 	"testing"
 
-	"gioui.org/internal/ops"
+	"github.com/0magnet/gio/internal/ops"
 )
 
 func TestTransformChecks(t *testing.T) {

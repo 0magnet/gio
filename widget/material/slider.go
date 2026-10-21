@@ -6,13 +6,13 @@ import (
 	"image"
 	"image/color"
 
-	"gioui.org/internal/f32color"
-	"gioui.org/layout"
-	"gioui.org/op"
-	"gioui.org/op/clip"
-	"gioui.org/op/paint"
-	"gioui.org/unit"
-	"gioui.org/widget"
+	"github.com/0magnet/gio/internal/f32color"
+	"github.com/0magnet/gio/layout"
+	"github.com/0magnet/gio/op"
+	"github.com/0magnet/gio/op/clip"
+	"github.com/0magnet/gio/op/paint"
+	"github.com/0magnet/gio/unit"
+	"github.com/0magnet/gio/widget"
 )
 
 // Slider is for selecting a value in a range.

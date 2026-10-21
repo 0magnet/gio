@@ -9,8 +9,8 @@ import (
 	"runtime"
 	"unsafe"
 
-	"gioui.org/gpu"
-	"gioui.org/internal/gl"
+	"github.com/0magnet/gio/gpu"
+	"github.com/0magnet/gio/internal/gl"
 )
 
 /*

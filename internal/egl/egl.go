@@ -11,7 +11,7 @@ import (
 	"slices"
 	"strings"
 
-	"gioui.org/gpu"
+	"github.com/0magnet/gio/gpu"
 )
 
 type Context struct {

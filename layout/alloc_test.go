@@ -8,7 +8,7 @@ import (
 	"image"
 	"testing"
 
-	"gioui.org/op"
+	"github.com/0magnet/gio/op"
 )
 
 func TestStackAllocs(t *testing.T) {

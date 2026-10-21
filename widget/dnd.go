@@ -3,14 +3,14 @@ package widget
 import (
 	"io"
 
-	"gioui.org/f32"
-	"gioui.org/gesture"
-	"gioui.org/io/event"
-	"gioui.org/io/pointer"
-	"gioui.org/io/transfer"
-	"gioui.org/layout"
-	"gioui.org/op"
-	"gioui.org/op/clip"
+	"github.com/0magnet/gio/f32"
+	"github.com/0magnet/gio/gesture"
+	"github.com/0magnet/gio/io/event"
+	"github.com/0magnet/gio/io/pointer"
+	"github.com/0magnet/gio/io/transfer"
+	"github.com/0magnet/gio/layout"
+	"github.com/0magnet/gio/op"
+	"github.com/0magnet/gio/op/clip"
 )
 
 // Draggable makes a widget draggable.

@@ -17,11 +17,11 @@ import (
 
 	"golang.org/x/image/colornames"
 
-	"gioui.org/f32"
-	"gioui.org/gpu/headless"
-	"gioui.org/internal/f32color"
-	"gioui.org/op"
-	"gioui.org/op/paint"
+	"github.com/0magnet/gio/f32"
+	"github.com/0magnet/gio/gpu/headless"
+	"github.com/0magnet/gio/internal/f32color"
+	"github.com/0magnet/gio/op"
+	"github.com/0magnet/gio/op/paint"
 )
 
 var (

@@ -3,7 +3,7 @@
 package app
 
 import (
-	"gioui.org/io/event"
+	"github.com/0magnet/gio/io/event"
 	"golang.org/x/net/idna"
 	"image"
 	"net/url"
@@ -12,10 +12,10 @@ import (
 	"strings"
 	"time"
 
-	"gioui.org/io/input"
-	"gioui.org/layout"
-	"gioui.org/op"
-	"gioui.org/unit"
+	"github.com/0magnet/gio/io/input"
+	"github.com/0magnet/gio/layout"
+	"github.com/0magnet/gio/op"
+	"github.com/0magnet/gio/unit"
 )
 
 // extraArgs contains extra arguments to append to
@@ -34,7 +34,7 @@ var extraArgs string
 //
 // ID is set by the [gioui.org/cmd/gogio] tool or manually with the -X linker flag. For example,
 //
-//	go build -ldflags="-X 'gioui.org/app.ID=org.gioui.example.Kitchen'" .
+//	go build -ldflags="-X 'github.com/0magnet/gio/app.ID=org.gioui.example.Kitchen'" .
 //
 // Note that ID is treated as a constant, and that changing it at runtime
 // is not supported. The default value of ID is filepath.Base(os.Args[0]).

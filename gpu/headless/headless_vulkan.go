@@ -7,8 +7,8 @@ package headless
 import (
 	"unsafe"
 
-	"gioui.org/gpu"
-	"gioui.org/internal/vk"
+	"github.com/0magnet/gio/gpu"
+	"github.com/0magnet/gio/internal/vk"
 )
 
 type vkContext struct {

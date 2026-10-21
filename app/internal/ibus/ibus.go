@@ -11,8 +11,8 @@ import (
 	"strconv"
 	"strings"
 
-	"gioui.org/internal/debug"
-	"gioui.org/io/key"
+	"github.com/0magnet/gio/internal/debug"
+	"github.com/0magnet/gio/io/key"
 
 	"github.com/godbus/dbus/v5"
 )

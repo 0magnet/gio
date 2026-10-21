@@ -9,17 +9,17 @@ import (
 	"strings"
 	"time"
 
-	"gioui.org/f32"
-	f32internal "gioui.org/internal/f32"
-	"gioui.org/internal/ops"
-	"gioui.org/io/clipboard"
-	"gioui.org/io/event"
-	"gioui.org/io/key"
-	"gioui.org/io/pointer"
-	"gioui.org/io/semantic"
-	"gioui.org/io/system"
-	"gioui.org/io/transfer"
-	"gioui.org/op"
+	"github.com/0magnet/gio/f32"
+	f32internal "github.com/0magnet/gio/internal/f32"
+	"github.com/0magnet/gio/internal/ops"
+	"github.com/0magnet/gio/io/clipboard"
+	"github.com/0magnet/gio/io/event"
+	"github.com/0magnet/gio/io/key"
+	"github.com/0magnet/gio/io/pointer"
+	"github.com/0magnet/gio/io/semantic"
+	"github.com/0magnet/gio/io/system"
+	"github.com/0magnet/gio/io/transfer"
+	"github.com/0magnet/gio/op"
 )
 
 // Router tracks the [io/event.Tag] identifiers of user interface widgets
@@ -111,8 +111,8 @@ type SemanticID uint
 // SystemEvent is a marker for events that have platform specific
 // side-effects. SystemEvents are never matched by catch-all filters;
 // only filters that explicitly match the event, such as a
-// [gioui.org/io/key.Filter] with a non-empty Name, receive them.
-// [gioui.org/app.Window] uses SystemEvent for keys reserved for focus
+// [github.com/0magnet/gio/io/key.Filter] with a non-empty Name, receive them.
+// [github.com/0magnet/gio/app.Window] uses SystemEvent for keys reserved for focus
 // navigation: Tab and Shift-Tab, and on mobile the arrow keys. If no
 // handler matches such an event, the window moves focus instead.
 type SystemEvent struct {

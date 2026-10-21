@@ -6,10 +6,10 @@ import (
 	"image"
 	"image/color"
 
-	"gioui.org/layout"
-	"gioui.org/op/clip"
-	"gioui.org/op/paint"
-	"gioui.org/unit"
+	"github.com/0magnet/gio/layout"
+	"github.com/0magnet/gio/op/clip"
+	"github.com/0magnet/gio/op/paint"
+	"github.com/0magnet/gio/unit"
 )
 
 // Border lays out a widget and draws a border inside it.

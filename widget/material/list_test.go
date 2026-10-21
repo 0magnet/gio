@@ -4,11 +4,11 @@ import (
 	"image"
 	"testing"
 
-	"gioui.org/layout"
-	"gioui.org/op"
-	"gioui.org/unit"
-	"gioui.org/widget"
-	"gioui.org/widget/material"
+	"github.com/0magnet/gio/layout"
+	"github.com/0magnet/gio/op"
+	"github.com/0magnet/gio/unit"
+	"github.com/0magnet/gio/widget"
+	"github.com/0magnet/gio/widget/material"
 )
 
 func TestListAnchorStrategies(t *testing.T) {

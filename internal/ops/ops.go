@@ -7,9 +7,9 @@ import (
 	"image"
 	"math"
 
-	"gioui.org/f32"
-	"gioui.org/internal/byteslice"
-	"gioui.org/internal/scene"
+	"github.com/0magnet/gio/f32"
+	"github.com/0magnet/gio/internal/byteslice"
+	"github.com/0magnet/gio/internal/scene"
 )
 
 type Ops struct {

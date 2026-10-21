@@ -8,12 +8,12 @@ import (
 	"image"
 	"math"
 
-	"gioui.org/f32"
-	f32internal "gioui.org/internal/f32"
-	"gioui.org/internal/ops"
-	"gioui.org/internal/scene"
-	"gioui.org/internal/stroke"
-	"gioui.org/op"
+	"github.com/0magnet/gio/f32"
+	f32internal "github.com/0magnet/gio/internal/f32"
+	"github.com/0magnet/gio/internal/ops"
+	"github.com/0magnet/gio/internal/scene"
+	"github.com/0magnet/gio/internal/stroke"
+	"github.com/0magnet/gio/op"
 )
 
 // Op represents a clip area. Op intersects the current clip area with

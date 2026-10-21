@@ -8,7 +8,7 @@ import (
 	"errors"
 	"unsafe"
 
-	"gioui.org/internal/egl"
+	"github.com/0magnet/gio/internal/egl"
 )
 
 /*

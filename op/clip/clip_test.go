@@ -7,11 +7,11 @@ import (
 	"math"
 	"testing"
 
-	"gioui.org/f32"
-	"gioui.org/gpu/headless"
-	"gioui.org/op"
-	"gioui.org/op/clip"
-	"gioui.org/op/paint"
+	"github.com/0magnet/gio/f32"
+	"github.com/0magnet/gio/gpu/headless"
+	"github.com/0magnet/gio/op"
+	"github.com/0magnet/gio/op/clip"
+	"github.com/0magnet/gio/op/paint"
 )
 
 func TestPathOutline(t *testing.T) {

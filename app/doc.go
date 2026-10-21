@@ -44,7 +44,7 @@ For example, to display a blank but otherwise functional window:
 
 	package main
 
-	import "gioui.org/app"
+	import "github.com/0magnet/gio/app"
 
 	func main() {
 		go func() {
@@ -67,9 +67,9 @@ application calls [ClosingEvent.Abort] while handling the event.
 
 # Permissions
 
-The packages under gioui.org/app/permission should be imported
+The packages under github.com/0magnet/gio/app/permission should be imported
 by a Gio program or by one of its dependencies to indicate that specific
 operating-system permissions are required.  Please see documentation for
-package gioui.org/app/permission for more information.
+package github.com/0magnet/gio/app/permission for more information.
 */
 package app

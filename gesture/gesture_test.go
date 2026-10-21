@@ -7,12 +7,12 @@ import (
 	"testing"
 	"time"
 
-	"gioui.org/f32"
-	"gioui.org/io/event"
-	"gioui.org/io/input"
-	"gioui.org/io/pointer"
-	"gioui.org/op"
-	"gioui.org/op/clip"
+	"github.com/0magnet/gio/f32"
+	"github.com/0magnet/gio/io/event"
+	"github.com/0magnet/gio/io/input"
+	"github.com/0magnet/gio/io/pointer"
+	"github.com/0magnet/gio/op"
+	"github.com/0magnet/gio/op/clip"
 )
 
 func TestHover(t *testing.T) {

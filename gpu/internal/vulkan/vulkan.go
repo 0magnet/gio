@@ -10,8 +10,8 @@ import (
 	"image"
 	"math/bits"
 
-	"gioui.org/gpu/internal/driver"
-	"gioui.org/internal/vk"
+	"github.com/0magnet/gio/gpu/internal/driver"
+	"github.com/0magnet/gio/internal/vk"
 	"gioui.org/shader"
 )
 

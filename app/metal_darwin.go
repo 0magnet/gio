@@ -7,7 +7,7 @@ package app
 import (
 	"errors"
 
-	"gioui.org/gpu"
+	"github.com/0magnet/gio/gpu"
 )
 
 /*

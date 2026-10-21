@@ -3,9 +3,9 @@
 package material
 
 import (
-	"gioui.org/io/semantic"
-	"gioui.org/layout"
-	"gioui.org/widget"
+	"github.com/0magnet/gio/io/semantic"
+	"github.com/0magnet/gio/layout"
+	"github.com/0magnet/gio/widget"
 )
 
 type RadioButtonStyle struct {

@@ -9,14 +9,14 @@ import (
 	"strings"
 	"testing"
 
-	"gioui.org/f32"
-	"gioui.org/io/event"
-	"gioui.org/io/key"
-	"gioui.org/io/pointer"
-	"gioui.org/io/system"
-	"gioui.org/io/transfer"
-	"gioui.org/op"
-	"gioui.org/op/clip"
+	"github.com/0magnet/gio/f32"
+	"github.com/0magnet/gio/io/event"
+	"github.com/0magnet/gio/io/key"
+	"github.com/0magnet/gio/io/pointer"
+	"github.com/0magnet/gio/io/system"
+	"github.com/0magnet/gio/io/transfer"
+	"github.com/0magnet/gio/op"
+	"github.com/0magnet/gio/op/clip"
 )
 
 func TestFilterReset(t *testing.T) {

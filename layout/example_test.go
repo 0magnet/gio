@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"image"
 
-	"gioui.org/layout"
-	"gioui.org/op"
+	"github.com/0magnet/gio/layout"
+	"github.com/0magnet/gio/op"
 )
 
 func ExampleInset() {

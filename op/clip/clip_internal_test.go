@@ -3,8 +3,8 @@
 package clip
 
 import (
-	"gioui.org/f32"
-	"gioui.org/op"
+	"github.com/0magnet/gio/f32"
+	"github.com/0magnet/gio/op"
 	"math"
 	"testing"
 )
